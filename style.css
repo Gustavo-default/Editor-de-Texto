@@ -1,0 +1,85 @@
+
+.cd-toolbar {
+    box-sizing: border-box;
+    min-height: 40px;
+    list-style: none;
+    margin: 0;
+    padding: 5px 10px;
+    background-color: #F2F3F4;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.cd-toolbar li {
+    margin: 0;
+    padding: 5px 0;
+    display: inline-block;
+}
+
+.cd-toolbar button {
+    height: 20px;
+    width: 20px;
+    background-color: #fff;
+    border: 1px solid #999;
+    border-radius: 3px;
+}
+
+.cd-toolbar select {
+    height: 20px;
+    min-width: 40px;
+    background-color: #fff;
+    border: 1px solid #999;
+    border-radius: 3px;
+    font-size: 1em;
+}
+
+.cd-toolbar li.space {
+    content: '/';
+    width: 5px;
+    margin-left: 5px;
+    border-left: 1px solid #999;
+}
+
+#color {
+    width: 80px;
+}
+#color option span {
+    width: 80px;
+    content: '&nbsp';
+    border: 1px solid #999;
+}
+
+.cd-editor {
+    background-color: #fff;
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 300px;
+    margin: 0;
+    padding: 10px;
+    border: 0;
+    display: block;
+    overflow: auto;
+    border-top: none;
+    border-radius: 0px 0px 10px 10px;
+}
+
+@media screen and (max-width: 479px){
+    .container{
+        padding: 0px 1%;
+        box-sizing: border-box;
+        width: fit-content;
+    }
+    .container h1 {
+        font-size: 2em;
+    }
+    .cd-toolbar {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .cd-toolbar li {
+        padding: 1% 0.5%;
+    }
+    .cd-toolbar select{
+        font-size: 1em;
+    }
+}
